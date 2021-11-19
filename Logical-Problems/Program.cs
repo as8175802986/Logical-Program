@@ -13,7 +13,7 @@ namespace Logical_Problems
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Enter your Choice Number to Execute the Logical Program Press- 1-Fibonacci Series, 2-Coupan Number, 3-Perfect Number, 4-Prime Number ,5-Exit");
+                Console.WriteLine("Enter your Choice Number to Execute the Logical Program Press- 1-Fibonacci Series, 2-Coupan Number, 3-Perfect Number, 4-Prime Number , 5-Reverse Numbers ,6-Exit");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
                 {
@@ -41,8 +41,14 @@ namespace Logical_Problems
                         PrimeNumbers prn = new PrimeNumbers();
                         prn.Check(num);
                         break;
-
                     case 5:
+                        Console.WriteLine("Enter a Number to Reverse ");
+                        int numb = Convert.ToInt32(Console.ReadLine());
+                        ReverseNumbers rv = new ReverseNumbers();
+                        rv.Calculation(numb);
+                        break;
+
+                    case 6:
                         flag = false;
                         break;
                 }
