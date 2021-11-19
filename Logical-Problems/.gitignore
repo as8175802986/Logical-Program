@@ -2,5 +2,4 @@
 bin
 obj
 Properties
-App.c
-config
+App.config
