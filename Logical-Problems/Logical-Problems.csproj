@@ -43,6 +43,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CouponNumbers.cs" />
+    <Compile Include="FibonacciSeries.cs" />
+    <Compile Include="PerfectNumbers.cs" />
+    <Compile Include="PrimeNumbers.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

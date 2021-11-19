@@ -13,7 +13,7 @@ namespace Logical_Problems
             bool flag = true;
             while (flag)
             {
-                Console.WriteLine("Enter your Choice Number to Execute the Logical Program Press- 1-Fibonacci Series, 2-Coupan Number, 3-Exit");
+                Console.WriteLine("Enter your Choice Number to Execute the Logical Program Press- 1-Fibonacci Series, 2-Coupan Number, 3-Perfect Number, 4-Prime Number ,5-Exit");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
                 {
@@ -29,8 +29,20 @@ namespace Logical_Problems
                         CouponNumbers cn = new CouponNumbers();
                         cn.Calculation(N);
                         break;
-
                     case 3:
+                        Console.Write("Enter the number :");
+                        int number = Convert.ToInt32(Console.ReadLine());
+                        PerfectNumbers pn = new PerfectNumbers();
+                        pn.Check(number);
+                        break;
+                    case 4:
+                        Console.WriteLine("Enter the Number to Check it's a Prime Number or not");
+                        int num = Convert.ToInt32(Console.ReadLine());
+                        PrimeNumbers prn = new PrimeNumbers();
+                        prn.Check(num);
+                        break;
+
+                    case 5:
                         flag = false;
                         break;
                 }
